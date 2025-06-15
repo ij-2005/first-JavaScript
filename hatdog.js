@@ -127,6 +127,6 @@ function restart(){
     Submit.onclick = submit;
     playerScore = 0;
     enemyScore = 0;
-    Result.innerText = "Press the Submit button!";
+    Result.innerText = "";
     text.innerText = "Play with me!";
 }
