@@ -66,31 +66,31 @@ function submit(){
             Result.innerText = "Player: " + playerScore + " | " + "Enemy: " + enemyScore;
         }else{
             if(enemyStatus === "rock" && playerStatus == "paper"){
-                text.innerText = "Player "+ playerStatus + " wins!";
+                text.innerText = "Enemy picked rock! - Player "+ playerStatus + " wins!";
                 playerScore++;
                 Result.innerText = "Player: " + playerScore + " | " + "Enemy: " + enemyScore;
 
             }else if(enemyStatus === "rock" && playerStatus == "scissors"){ //rock
-                text.innerText = "Enemy "+ enemyStatus + " wins!";
+                text.innerText = "Enemy picked rock! - Enemy "+ enemyStatus + " wins!";
                 enemyScore++;
                 Result.innerText = "Player: " + playerScore + " | " + "Enemy: " + enemyScore;
             }
             
             else if(enemyStatus === "paper" && playerStatus == "rock"){ // paper
-                text.innerText = "Enemy "+ enemyStatus + " wins!";
+                text.innerText = "Enemy picked paper! - Enemy "+ enemyStatus + " wins!";
                 enemyScore++;
                 Result.innerText = "Player: " + playerScore + " | " + "Enemy: " + enemyScore;
             }else if(enemyStatus === "paper" && playerStatus == "scissors"){
-                text.innerText = "Player "+ playerStatus + " wins!";
+                text.innerText = "Enemy picked paper! - Player "+ playerStatus + " wins!";
                 playerScore++;
                 Result.innerText = "Player: " + playerScore + " | " + "Enemy: " + enemyScore;
             }
             else if(enemyStatus === "scissors" && playerStatus == "rock"){ // scissors
-                text.innerText = "Player "+ playerStatus + " wins!";
+                text.innerText = "Enemy picked scissors! - Player "+ playerStatus + " wins!";
                 playerScore++;
                 Result.innerText = "Player: " + playerScore + " | " + "Enemy: " + enemyScore;
             }else if(enemyStatus === "scissors" && playerStatus == "paper"){ // scissors
-                text.innerText = "Enemy "+ enemyStatus + " wins!";
+                text.innerText = "Enemy picked scissors! - Enemy "+ enemyStatus + " wins!";
                 enemyScore++;
                 Result.innerText = "Player: " + playerScore + " | " + "Enemy: " + enemyScore;
             }
@@ -103,7 +103,7 @@ function submit(){
 
         if (rounds === 0) {
             if(playerScore > enemyScore){
-                text.innerText = "You have won! :D";
+                text.innerText += "\nRounds ended, you have won!";
             }else if (playerScore === enemyScore){
                 text.innerText = "Match drawn! Restart!";
             }else{
